@@ -1,0 +1,31 @@
+.app-item {
+  background-color: #fff;
+  background-size: cover;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  max-width: 136px;
+  align-items: center;
+}
+.app-image {
+  width: 65px;
+  height: 65px;
+}
+@media screen and(max-width:768px) {
+  .app-image {
+    width: 120px;
+    height: 102px;
+  }
+}
+
+.app-name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  font-family: 'bree serif';
+}
