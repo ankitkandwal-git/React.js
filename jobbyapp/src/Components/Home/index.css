@@ -1,0 +1,120 @@
+.app-container {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.home-container {
+    padding: 0 0 0 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: calc(100vh - 15vh);
+    width: 100%;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-text {
+    max-width: 500px;
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+.heading {
+    color: white;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    color: #d7dfe9;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+
+.find-jobs-button {
+    color: white;
+    background-color: #6366f1;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #6366f1;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.home-image {
+    width: 400px;
+    max-width: 40vw;
+    height: auto;
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .home-container {
+        padding: 20px;
+        background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+        min-height: calc(100vh - 80px);
+    }
+    .home-text {
+        margin-top: 40px;
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .heading {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+    .find-jobs-button {
+        width: 110px;
+        height: 36px;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .home-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .home-container {
+        padding: 40px;
+        background-image: url('https://assets.ccbp.in/frontend/react-js/home-md-bg.png');
+    }
+    .home-text {
+        margin-top: 60px;
+        padding-left: 24px;
+    }
+    .heading {
+        font-size: 36px;
+    }
+    .paragraph {
+        font-size: 16px;
+    }
+    .home-image {
+        width: 300px;
+        margin-left: 24px;
+    }
+}

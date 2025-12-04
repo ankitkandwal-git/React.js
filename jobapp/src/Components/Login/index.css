@@ -1,0 +1,109 @@
+.app-container{
+    background-color : black;
+    min-height: 100vh;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+.form-container{
+    background-color : #2c364c;
+    min-height : 400px;
+    width : 400px;
+    border-radius : 8px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 20px;
+    border-color : 1px solid #2c364c;
+}
+.website-logo{
+    width : 130px;
+    height : 50px;
+    margin-bottom : 10px;
+}
+.label{
+    color: #f8fafc;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left : 18px;
+}
+.input-field{
+    background: transparent;
+    border: 1px solid #6366f1;
+    width: 350px;
+    border-radius: 5px;
+    padding: 12px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+.login-button{
+    color : white;
+    background-color :  #6366f1;
+    width : 380px;
+    height : 30px;
+    border : 1px solid  #6366f1;
+    border-radius : 4px;
+    margin-top : 15px;
+
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .form-container {
+        width: 90%;
+        max-width: 340px;
+        min-height: 350px;
+    /* Animated gradient background */
+        padding: 16px;
+    }
+    .website-logo {
+        width: 100px;
+        height: 40px;
+    }
+    .label {
+        font-size: 14px;
+        padding-left: 12px;
+    }
+    .input-field {
+        width: 90%;
+        max-width: 300px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .login-button {
+        width: 90%;
+        max-width: 300px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .form-container {
+        width: 380px;
+    }
+    .input-field {
+        width: 330px;
+    }
+    .login-button {
+        width: 330px;
+    }
+}

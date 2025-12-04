@@ -1,0 +1,164 @@
+.profile-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+        margin-left: 70px;
+        padding-left: 70px;
+}
+.profile-details{
+    background-image : url("https://assets.ccbp.in/frontend/react-js/profile-bg.png");
+    background-size: cover;
+    min-height : 150px;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+.profile-info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-image{
+    border-radius : 20px;
+    height : 80px;
+    width : 80px;
+}
+.profile-name{
+    font-family : 'Roboto', sans-serif;
+    font-size : 20px;
+    color : #2c364c;
+    margin-top : 10px;
+}
+.profile-bio{
+    font-family : 'Roboto', sans-serif;
+    font-size : 14px;
+    color : #2c364c;
+    margin-top : 5px;
+}
+.seperate{
+    height : 1px;
+    background-color : #d7dfe9;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.employment-type-container {
+    margin-top: 24px;
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.employment-type-heading {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.employment-type-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-label {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    accent-color: #6366f1;
+    cursor: pointer;
+}
+
+.salary-range-container {
+    margin-top: 32px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.salary-range-heading {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.salary-range-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.radio-label {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.radio-input {
+    accent-color: #6366f1;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .profile-detail-container {
+        margin-left: 0;
+        padding-left: 0;
+        padding: 12px;
+    }
+    .profile-details {
+        min-height: 120px;
+        padding: 12px;
+    }
+    .profile-image {
+        height: 60px;
+        width: 60px;
+    }
+    .profile-name {
+        font-size: 18px;
+    }
+    .profile-bio {
+        font-size: 13px;
+    }
+    .employment-type-heading,
+    .salary-range-heading {
+        font-size: 16px;
+    }
+    .checkbox-label,
+    .radio-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile-detail-container {
+        margin-left: 0;
+        padding-left: 0;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,123 @@
+
+.app-container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px 32px;
+  max-width: 350px;
+  width: 100%;
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  margin-top : 10px;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.website-logo {
+  width: 80px;
+  margin: 0 auto 18px auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(118,75,162,0.2));
+}
+
+.label {
+  color: #4b3869;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+
+.input-field {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.7);
+  font-size: 15px;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(118,75,162,0.08);
+}
+.input-field:focus {
+  outline: none;
+  background: #f3eaff;
+  box-shadow: 0 0 0 2px #764ba2;
+}
+
+.login-button {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(118,75,162,0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+.login-button:hover {
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 6px;
+  text-align: center;
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(4px); }
+  30%, 50%, 70% { transform: translateX(-8px); }
+  40%, 60% { transform: translateX(8px); }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    padding: 24px 8px;
+    max-width: 95vw;
+  }
+  .website-logo {
+    width: 60px;
+  }
+}

@@ -1,0 +1,215 @@
+.render-failure-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    width: 100%;
+    background: transparent;
+    color: #cbd5e1;
+    text-align: center;
+    margin-top: 40px;
+}
+.render-failure-view img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 18px;
+    opacity: 0.8;
+}
+.render-failure-view h1 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.render-failure-view p {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.job-card-container {
+    position: relative;
+}
+.job-select-checkbox {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+.jobs-details-bg-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: black;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px 0 0 32px;
+}
+
+.jobs-list-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 20px 32px 20px 0;
+    min-width: 0;
+}
+.profile-details-container {
+    min-width: 300px;
+    max-width: 340px;
+    width: 100%;
+    margin-right: 24px;
+}
+.search-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid #334155;
+    padding-left : 50px;
+}
+.search-input {
+    width: 240px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #d7dfe9;
+    padding-left: 12px;
+    font-size: 16px;
+    background-color: #1e293b;
+    color: #fff;
+    outline: none;
+    transition: border 0.2s;
+}
+.search-input:focus {
+    border: 1.5px solid #6366f1;
+}
+.search-button {
+    background: #6366f1;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.search-button:hover {
+    background: #4f46e5;
+}
+.search-icon {
+    color: #fff;
+    font-size: 20px;
+}
+.list-container{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.render-loading-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  width: 100%;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.loading-dot {
+  width: 14px;
+  height: 14px;
+  background: #6366f1;
+  border-radius: 50%;
+  display: inline-block;
+  animation: loading-bounce 1s infinite alternate;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading-bounce {
+  to {
+    opacity: 0.3;
+    transform: translateY(-12px);
+  }
+}
+.full-job-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px;
+}
+.job-items-container {
+  background-color: #202020;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  padding: 45px;
+}
+.company-logo-justify {
+  width: 80px;
+  margin-right: 25px;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.company-title-head {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Roboto';
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .jobs-details-bg-container {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+    .profile-details-container {
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .jobs-list-container {
+        padding: 0;
+    }
+    .search-input-container {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+    .search-input {
+        width: calc(100% - 60px);
+        flex: 1;
+    }
+    .list-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .jobs-details-bg-container {
+        padding: 24px;
+        gap: 24px;
+    }
+    .profile-details-container {
+        min-width: 280px;
+        max-width: 300px;
+    }
+    .search-input-container {
+        padding-left: 24px;
+    }
+}
