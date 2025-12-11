@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "js-cookie": "^3.0.5",
+    "react-icons": "^5.5.0",
+    "reactjs-popup": "^2.0.6",
     "uuid": "^13.0.0"
   }
 }

@@ -1,0 +1,104 @@
+.game-bg-container{
+    background-color :  #223a5f;
+    min-height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction: column;
+}
+.game-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    width : 800px;
+    height : 200px;
+    align-items: center;
+    background-color: transparent;
+    outline: white solid 2px;
+    margin-top: 40px; /* Move header downward */
+    margin-bottom: 40px; /* Reduce excessive bottom margin */
+}
+.heading{
+    color : white;
+    font-family : 'Bree Serif', serif;
+    font-size : 30px;
+    font-weight : bold;
+    padding-left : 15px;
+}
+.score-container{
+    background-color : white;
+    border-radius : 10px;
+    padding : 10px 20px;
+    box-shadow : 0px 4px 8px rgba(0,0,0,0.1);
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    justify-content: center;
+    margin-right : 20px;
+    margin-top : 32px; /* Increased space from header */
+    margin-bottom : 10px;
+    width : 150px;
+    height : 150px;
+}
+.header-container{
+        display: flex;
+        justify-content: space-between;
+        width : 800px;
+        height : 200px;
+        align-items: center;
+        background-color: transparent;
+        outline: white solid 2px;
+        margin-top: 40px; /* Move header downward */
+        margin-bottom: 40px; /* Reduce excessive bottom margin */
+    }
+.score-text{
+    color : #223a5f;
+    font-family : 'Bree Serif', serif;
+    font-size : 20px;
+    font-weight : bold;
+    text-align : center;
+}
+.score-number{
+    color : #223a5f;
+    font-family : 'Bree Serif', serif;
+    font-size : 40px;
+    font-weight : bold;
+/* Removed invalid selector */
+}
+.choice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    flex: 1;
+}
+.choice-list{
+    list-style-type : none;
+    padding : 0;
+    display : flex;
+    gap : 50px;
+}
+
+.choice-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+.play-again-button{
+    background-color : white;
+    color :#223a5f;
+    font-family : 'Bree Serif', serif;
+    font-size : 20px;
+    font-weight : bold;
+    height : 40px;
+    width : 150px;
+    border-radius : 5px;
+    border : none;
+}
