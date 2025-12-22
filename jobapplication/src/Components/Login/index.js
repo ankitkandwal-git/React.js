@@ -59,6 +59,11 @@ class Login extends Component {
       <div className="app-container">
         <div className="login-container">
           <form className="form-container" onSubmit={this.onSubmit}>
+            <div className="credentials-note">
+              <strong>Demo Credentials:</strong><br />
+              Username: <span className="cred-username">rahul</span><br />
+              Password: <span className="cred-password">rahul@2021</span>
+            </div>
             <img
               src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
               className="website-logo"

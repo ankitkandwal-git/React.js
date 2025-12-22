@@ -1,0 +1,41 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.header-content{
+    display : flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.website-logo{
+    width : 120px;
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+.dark-theme-icon{
+    width : 45px;
+    height : 25px;
+}
+.profile-icon{
+    width : 35px;
+    height : 35px;
+    border-radius : 50%;
+}
+.logout-button{
+    background-color: transparent;
+    border : 1px solid #3b82f6;
+    color : #3b82f6;
+    padding : 8px 16px;
+    border-radius : 4px;
+    font-size : 14px;
+    cursor : pointer;
+}
